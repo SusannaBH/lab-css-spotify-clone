@@ -1,0 +1,199 @@
+/*COLORS:   Text: 1A1A1A
+            Green: #00B172
+            White: #FFF         */
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    margin: 0px;
+}
+header{
+    background-color: #FFF;
+    height: 60px;
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button{
+    border: none;
+    background-color: #FFF;
+    margin: 1px;
+}
+button:hover{
+    outline-style: solid;
+    outline-color: #00B172;
+    outline-width: 2px;
+    color: #00B172;
+}
+#imagenLanding{
+    width: 100%;
+}
+.text{
+    color: #FFF;
+    position: absolute;
+    text-align: center;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p3{
+    display: flex;
+    justify-content: center;
+}
+.section2{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.opcions {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.opcions > img {
+    height: 30vh;
+    display: block;
+    margin: auto;
+}
+.opcions > h2 {
+    color: #00B172;
+}
+.section3{
+    background-color: #00B172;
+    background-image: url(../images/spotify-icon-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+}
+.section3 > img {
+    height: 40vw;
+}
+
+/*MEDIDA DE PANTALLA MENOR O IGUAL A 320PX - FORMATO MOBILE*/
+@media (width <= 320px) {
+    button{
+        font-size: 10px;
+        display: flex;
+    }
+    & .logo{
+        height: 40px;
+        margin-right: 12px;
+        display: flex;
+        align-self: center;
+    }
+    & .p1{
+        font-size: 17px;
+    }
+    & .p2{
+        font-size: 7px;
+    }
+    & .p3{
+        font-size: 10px;
+    }
+    & .section2{
+        height: 120px;
+    }
+    & .opcions > img {
+        height: 35px;
+    }
+    & .opcions > h2{
+        font-size: 8px;
+        text-align: center;
+    }
+    & .opcions > p{
+        font-size: 6px;
+        text-align: center;
+    }
+    & .section3{
+        height: 200px;
+        background-size: 20px;
+    }
+    .section3 > div {
+        font-size: 6px;
+    }
+}
+
+/*MEDIDA DE PANTALLA A 768PX- FORMATO TABLET*/
+@media (width > 320px) and (width < 1024px){
+    button{
+        font-size: 15px;
+    }
+    & .p1{
+        font-size: 40px;
+    }
+    & .p2{
+        font-size: 15px;
+    }
+    & .p3{
+        font-size: 20px;
+    }
+    & .section2{
+        height: 250px;
+    }
+    & .opcions > img {
+        height: 70px;
+    }
+    & .opcions > h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    & .opcions > p{
+        font-size: 15px;
+        text-align: center;
+    }
+    & .section3{
+        height: 450px;
+        background-size: 50px;
+    }
+    .section3 > div {
+        font-size: 12px;
+    }
+}
+
+/*MEDIDA DE PANTALLA MAYOR O IGUAL A 1024 - FORMATO ORDENADOR*/
+@media (width >= 1024px) {
+    button{
+        font-size: 20px;
+    }
+    & .texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & .p1{
+        font-size: 75px;
+    }
+    & .p2{
+        font-size: 27px;
+    }
+    & .p3{
+        font-size: 30px;
+    }
+    & .section2{
+        height: 400px;
+    }
+    & .opcions > h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    & .opcions > p{
+        font-size: 30px;
+        text-align: center;
+    }
+    & .section3{
+        height: 900px;
+        background-size: 90px;
+    }
+    & .section3 > div {
+        font-size: 30px;
+    }
+}
